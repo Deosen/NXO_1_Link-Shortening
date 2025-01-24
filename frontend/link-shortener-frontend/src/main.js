@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import 'bootswatch/dist/darkly/bootstrap.min.css';
+import 'bootswatch/dist/darkly/bootstrap.min.css'
 
 createApp(App).mount('#app')
