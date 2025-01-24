@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
                 <div class="container-fluid">
-                  <router-link class="navbar-brand" to="/">{{ title }}</router-link>
+                  <router-link class="navbar-brand" to="#">{{ title }}</router-link>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -14,16 +14,16 @@
                         </router-link>
                       </li>
                       <li class="nav-item">
-                        <router-link class="nav-link" to="#">Login</router-link>
+                        <router-link class="nav-link" to="/default">Login</router-link>
                       </li>
                       <li class="nav-item">
-                        <router-link class="nav-link" to="#">Features</router-link>
+                        <router-link class="nav-link" to="/default">Features</router-link>
                       </li>
                       <li class="nav-item">
-                        <router-link class="nav-link" to="#">Pricing</router-link>
+                        <router-link class="nav-link" to="/default">Pricing</router-link>
                       </li>
                       <li class="nav-item">
-                        <router-link class="nav-link" to="#">About</router-link>
+                        <router-link class="nav-link" to="/default">About</router-link>
                       </li>
                     </ul>
                   </div>

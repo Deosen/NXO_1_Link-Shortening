@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header title="LINK Shortener" />
+    <router-view></router-view>
   </div>
 </template>
 
@@ -10,7 +11,8 @@ import Header from './components/Header.vue'
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+
   }
 }
 </script>

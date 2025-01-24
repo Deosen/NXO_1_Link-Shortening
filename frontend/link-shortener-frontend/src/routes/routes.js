@@ -1,18 +1,22 @@
-import "../components/LinkList"
-import "../components/AddLink"
+import LinkList from "../components/LinkList.vue"
+import AddLink from "../components/AddLink.vue";
 import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
-
     {
         name: "LinkList",
         path: "/",
-        component: "AddLink"
+        component: LinkList
     },
     {
         name: "AddLink",
         path: "/add_link",
-        component: "AddLink"
+        component: AddLink, LinkList
+    },
+    {
+        name: "Default",
+        path: "/default",
+        compnent: ""
     }
 ];
 
