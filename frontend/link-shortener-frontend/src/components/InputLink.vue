@@ -28,7 +28,7 @@
     const validateUrl = (url) => {
         if (!url) return;
         
-        const invalidChars = url.match(/[^-A-Za-z0-9+&@#/%?=~_|!:,.;]/g);
+        const invalidChars = url.match(/[^-A-Za-z0-9+&@#/%?=~_|!:,.;\\]/g);
         if (invalidChars) {
         // Create safe text content
         const invalidCharsList = invalidChars
@@ -37,7 +37,7 @@
         console.warn('Invalid URL characters detected:', invalidCharsList);
         
         // Use v-model instead of direct DOM manipulation
-        long_url.value = url.replace(/[^-A-Za-z0-9+&@#/%?=~_|!:,.;]/g, '');
+        long_url.value = url.replace(/[^-A-Za-z0-9+&@#/%?=~_|!:,.;\\]/g, '');
         }
     }
 
