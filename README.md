@@ -38,3 +38,8 @@ To zadanie pozwoli Ci zaprezentować umiejętności związane z projektowaniem a
 tworzeniem interfejsu użytkownika oraz zarządzaniem bazą danych. Chcemy zobaczyć,
 jak podchodzisz do struktury kodu, jego organizacji oraz rozwiązywania problemów
 związanych z logiką aplikacji.
+
+Wstępna wizualizacja.
+![image](https://github.com/user-attachments/assets/d659ee9d-5fde-4667-a93f-8e831be21455)
+
+
