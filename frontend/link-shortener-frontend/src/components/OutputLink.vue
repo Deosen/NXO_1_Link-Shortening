@@ -16,10 +16,7 @@
 
 <style>
     .output-link {
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        max-width: 30%;
-        margin-bottom: 100px;
+        min-width: 20%;
+        max-width: 40%;
     }
 </style>
