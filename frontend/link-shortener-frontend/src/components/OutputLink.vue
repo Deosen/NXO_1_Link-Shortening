@@ -1,15 +1,18 @@
 <template>
     <div class="output-link">
         <label class="form-label mt-4" for="readOnlyInput">Shorten Link :</label>
-        <input class="form-control" id="readOnlyInput" type="text" placeholder="Shorten Link:" readonly="" v-model="short_url" @click="copyToClipboard">
+        <input class="form-control" id="readOnlyInput" type="text" :value="short_url" readonly @click="copyToClipboard">
     </div>
 </template>
       
 <script>
   export default {
-        name: 'OutputAddress',
+       name: 'OutputLink',
         props: {
-        address: String
+            short_url: {
+                type: String,
+                default: 'https:\\www.example.com'
+            }
         }
     }
 </script>
