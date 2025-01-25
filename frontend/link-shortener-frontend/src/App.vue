@@ -8,6 +8,7 @@
       <CopyButton />
     </div>
     <router-view></router-view>
+    <OptionsPanelButtons />
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import InputLink from './components/InputLink.vue'
 import ShortLinkButton from './components/ShortLinkButton.vue'
 import OutputLink from './components/OutputLink.vue'
 import CopyButton from './components/CopyButton.vue'
+import OptionsPanelButtons from './components/OptionsPanelButtons.vue'
 
 export default {
   name: 'App',
@@ -25,7 +27,8 @@ export default {
     InputLink,
     ShortLinkButton,
     OutputLink,
-    CopyButton
+    CopyButton,
+    OptionsPanelButtons
   }
 }
 </script>
