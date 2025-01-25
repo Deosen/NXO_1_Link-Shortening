@@ -1,26 +1,44 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <Header title="LINK Shortener" />
+    <InputLink />
+    <ShortLinkButton />
+    <div class="div-output-container">
+      <OutputLink />
+      <CopyButton />
+    </div>
+    <router-view></router-view>
+    <OptionsPanelButtons />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import InputLink from './components/InputLink.vue'
+import ShortLinkButton from './components/ShortLinkButton.vue'
+import OutputLink from './components/OutputLink.vue'
+import CopyButton from './components/CopyButton.vue'
+import OptionsPanelButtons from './components/OptionsPanelButtons.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    InputLink,
+    ShortLinkButton,
+    OutputLink,
+    CopyButton,
+    OptionsPanelButtons
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+    .div-output-container {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 </style>
